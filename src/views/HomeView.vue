@@ -1,7 +1,3 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <div>
     <TaskForm @add="addTask" />
@@ -58,4 +54,3 @@ const { tasks, pendingTasks, completedTasks, addTask, toggleTask, removeTask } =
   font-size: 0.95rem;
 }
 </style>
-  
