@@ -4,10 +4,28 @@
     <nav>
       <router-link to="/">Início</router-link>
       <router-link to="/about">Sobre</router-link>
+      <button
+        v-if="authStore.isAuthenticated"
+        class="logout-btn"
+        @click="handleLogout"
+      >
+        Sair
+      </button>
     </nav>
   </header>
 </template>
+<script setup>
+import { useAuthStore } from '@/stores/auth';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+const authStore = useAuthStore();
+
+function handleLogout() {
+  authStore.logout();
+  router.push('/login');
+}
+</script>
 <style scoped>
 .app-header {
   display: flex;
