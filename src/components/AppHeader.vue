@@ -1,6 +1,6 @@
 <template>
   <header class="app-header">
-    <h1>Tarefas</h1>
+    <h1>Gerenciador de Tarefas</h1>
     <nav>
       <router-link to="/">Início</router-link>
       <router-link to="/about">Sobre</router-link>
