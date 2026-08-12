@@ -38,7 +38,8 @@ function handleLogout() {
 
 .app-header h1 {
   font-size: 1.4rem;
-  color: #4a90d9;
+  color: #000080
+  ;
 }
 
 nav {
@@ -48,7 +49,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #666;
+  color: black;
   font-weight: 500;
   font-size: 0.9rem;
 }
